@@ -1,0 +1,213 @@
+==6589== Memcheck, a memory error detector
+==6589== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6589== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==6589== Command: ./assignment3
+==6589== 
+Electric Pokemon Pikachu has entered the arena.
+Class: Electric
+	Name: Pikachu
+	HP: 150
+	Damage: 20
+
+
+Psychic Pokemon Abra has entered the arena.
+Class: Psychic
+	Name: Abra
+	HP: 120
+	Damage: 10
+
+
+==6589== Conditional jump or move depends on uninitialised value(s)
+==6589==    at 0x109FC3: Arena::simulateBattle() (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589==    by 0x10B14A: main (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589== 
+Round: 1
+Current Terrain: None
+Pikachu goes first.
+Pikachu has initiated a power up.
+Abra has initiated a power up.
+Pikachu HP: 140
+Abra HP: 60
+Pikachu is in the lead!
+
+
+Round: 2
+Current Terrain: Psychic
+Pikachu goes first.
+Pikachu HP: 130
+Abra HP: 60
+Pikachu is in the lead!
+
+
+Round: 3
+Current Terrain: Psychic
+Abra goes first.
+Pikachu HP: 120
+Abra HP: 60
+Pikachu is in the lead!
+
+
+Round: 4
+Current Terrain: Psychic
+Abra goes first.
+Pikachu HP: 110
+Abra HP: 60
+Pikachu is in the lead!
+
+
+Round: 5
+Current Terrain: Psychic
+Abra goes first.
+Pikachu HP: 100
+Abra HP: 40
+Pikachu is in the lead!
+
+
+Round: 6
+Current Terrain: Psychic
+Abra goes first.
+Abra has initiated a power up.
+Pikachu HP: 90
+Abra HP: 40
+Pikachu is in the lead!
+
+
+Round: 7
+Current Terrain: None
+Pikachu goes first.
+Pikachu HP: 80
+Abra HP: 40
+Pikachu is in the lead!
+
+
+Round: 8
+Current Terrain: Electric
+Abra goes first.
+Pikachu HP: 70
+Abra HP: 40
+Pikachu is in the lead!
+
+
+Round: 9
+Current Terrain: Electric
+Abra goes first.
+Pikachu HP: 60
+Abra HP: 20
+Pikachu is in the lead!
+
+
+Round: 10
+Current Terrain: Electric
+Abra goes first.
+Pikachu HP: 50
+Abra HP: 0
+Pikachu is in the lead!
+
+
+Match Results:
+Pikachu has won the match.
+
+
+Electric Pokemon Jolteon has entered the arena.
+Class: Electric
+	Name: Jolteon
+	HP: 150
+	Damage: 10
+
+
+Psychic Pokemon Kadabra has entered the arena.
+Class: Psychic
+	Name: Kadabra
+	HP: 100
+	Damage: 20
+
+
+==6589== Conditional jump or move depends on uninitialised value(s)
+==6589==    at 0x109EFE: Arena::simulateBattle() (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589==    by 0x10B20C: main (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589== 
+Round: 1
+Current Terrain: None
+Kadabra goes first.
+Jolteon HP: 130
+Kadabra HP: 90
+Jolteon is in the lead!
+
+
+==6589== Conditional jump or move depends on uninitialised value(s)
+==6589==    at 0x10A9E5: Arena::nextRound() (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589==    by 0x10A136: Arena::simulateBattle() (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589==    by 0x10B20C: main (in /home/ubuntu/hostVolume/BLG252_HW3/assignment3)
+==6589== 
+Round: 2
+Current Terrain: None
+Jolteon goes first.
+Jolteon has initiated a power up.
+Jolteon HP: 110
+Kadabra HP: 60
+Jolteon is in the lead!
+
+
+Round: 3
+Current Terrain: None
+Jolteon goes first.
+Jolteon HP: 90
+Kadabra HP: 50
+Jolteon is in the lead!
+
+
+Round: 4
+Current Terrain: Psychic
+Kadabra goes first.
+Kadabra has initiated a power up.
+Jolteon HP: 70
+Kadabra HP: 50
+Jolteon is in the lead!
+
+
+Round: 5
+Current Terrain: Psychic
+Kadabra goes first.
+Jolteon HP: 50
+Kadabra HP: 50
+Kadabra is in the lead!
+
+
+Round: 6
+Current Terrain: Psychic
+Jolteon goes first.
+Jolteon HP: 30
+Kadabra HP: 50
+Kadabra is in the lead!
+
+
+Round: 7
+Current Terrain: Psychic
+Kadabra goes first.
+Jolteon HP: 10
+Kadabra HP: 40
+Kadabra is in the lead!
+
+
+Round: 8
+Current Terrain: Psychic
+Kadabra goes first.
+Jolteon HP: 0
+Kadabra HP: 40
+Kadabra is in the lead!
+
+
+Match Results:
+Kadabra has won the match.
+
+
+==6589== 
+==6589== HEAP SUMMARY:
+==6589==     in use at exit: 0 bytes in 0 blocks
+==6589==   total heap usage: 37 allocs, 37 frees, 78,162 bytes allocated
+==6589== 
+==6589== All heap blocks were freed -- no leaks are possible
+==6589== 
+==6589== For counts of detected and suppressed errors, rerun with: -v
+==6589== Use --track-origins=yes to see where uninitialised values come from
+==6589== ERROR SUMMARY: 5 errors from 3 contexts (suppressed: 0 from 0)
